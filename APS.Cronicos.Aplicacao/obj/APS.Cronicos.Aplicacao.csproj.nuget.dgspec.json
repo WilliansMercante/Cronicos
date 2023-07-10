@@ -1,0 +1,309 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\NovosProjetos\\APS.Cronicos\\APS.Cronicos.Aplicacao\\APS.Cronicos.Aplicacao.csproj": {}
+  },
+  "projects": {
+    "C:\\NovosProjetos\\APS.Cronicos\\APS.Cronicos.Aplicacao\\APS.Cronicos.Aplicacao.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\NovosProjetos\\APS.Cronicos\\APS.Cronicos.Aplicacao\\APS.Cronicos.Aplicacao.csproj",
+        "projectName": "APS.Cronicos.Aplicacao",
+        "projectPath": "C:\\NovosProjetos\\APS.Cronicos\\APS.Cronicos.Aplicacao\\APS.Cronicos.Aplicacao.csproj",
+        "packagesPath": "C:\\Users\\015102749\\.nuget\\packages\\",
+        "outputPath": "C:\\NovosProjetos\\APS.Cronicos\\APS.Cronicos.Aplicacao\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\015102749\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "C:\\NovosProjetos\\APS.Cronicos\\APS.Cronicos.Dominio\\APS.Cronicos.Dominio.csproj": {
+                "projectPath": "C:\\NovosProjetos\\APS.Cronicos\\APS.Cronicos.Dominio\\APS.Cronicos.Dominio.csproj"
+              },
+              "C:\\NovosProjetos\\APS.Cronicos\\APS.Cronicos.Infra.Data\\APS.Cronicos.Infra.Data.csproj": {
+                "projectPath": "C:\\NovosProjetos\\APS.Cronicos\\APS.Cronicos.Infra.Data\\APS.Cronicos.Infra.Data.csproj"
+              },
+              "C:\\NovosProjetos\\APS.Cronicos\\APS.Cronicos.ViewModel\\APS.Cronicos.ViewModels.csproj": {
+                "projectPath": "C:\\NovosProjetos\\APS.Cronicos\\APS.Cronicos.ViewModel\\APS.Cronicos.ViewModels.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[10.1.1, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\NovosProjetos\\APS.Cronicos\\APS.Cronicos.Dominio\\APS.Cronicos.Dominio.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\NovosProjetos\\APS.Cronicos\\APS.Cronicos.Dominio\\APS.Cronicos.Dominio.csproj",
+        "projectName": "APS.Cronicos.Dominio",
+        "projectPath": "C:\\NovosProjetos\\APS.Cronicos\\APS.Cronicos.Dominio\\APS.Cronicos.Dominio.csproj",
+        "packagesPath": "C:\\Users\\015102749\\.nuget\\packages\\",
+        "outputPath": "C:\\NovosProjetos\\APS.Cronicos\\APS.Cronicos.Dominio\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\015102749\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "dependencies": {
+            "Microsoft.AspNetCore.Http.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\NovosProjetos\\APS.Cronicos\\APS.Cronicos.Infra.Data\\APS.Cronicos.Infra.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\NovosProjetos\\APS.Cronicos\\APS.Cronicos.Infra.Data\\APS.Cronicos.Infra.Data.csproj",
+        "projectName": "APS.Cronicos.Infra.Data",
+        "projectPath": "C:\\NovosProjetos\\APS.Cronicos\\APS.Cronicos.Infra.Data\\APS.Cronicos.Infra.Data.csproj",
+        "packagesPath": "C:\\Users\\015102749\\.nuget\\packages\\",
+        "outputPath": "C:\\NovosProjetos\\APS.Cronicos\\APS.Cronicos.Infra.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\015102749\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "C:\\NovosProjetos\\APS.Cronicos\\APS.Cronicos.Dominio\\APS.Cronicos.Dominio.csproj": {
+                "projectPath": "C:\\NovosProjetos\\APS.Cronicos\\APS.Cronicos.Dominio\\APS.Cronicos.Dominio.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "dependencies": {
+            "DotNetCore.NPOI": {
+              "target": "Package",
+              "version": "[1.2.2, )"
+            },
+            "JsonDiffPatch.Net": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Http.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Http.Extensions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.DynamicLinq": {
+              "target": "Package",
+              "version": "[3.2.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer.Design": {
+              "target": "Package",
+              "version": "[1.1.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "RestSharp": {
+              "target": "Package",
+              "version": "[106.11.7, )"
+            },
+            "System.Linq.Dynamic.Core": {
+              "target": "Package",
+              "version": "[1.2.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\NovosProjetos\\APS.Cronicos\\APS.Cronicos.ViewModel\\APS.Cronicos.ViewModels.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\NovosProjetos\\APS.Cronicos\\APS.Cronicos.ViewModel\\APS.Cronicos.ViewModels.csproj",
+        "projectName": "APS.Cronicos.ViewModels",
+        "projectPath": "C:\\NovosProjetos\\APS.Cronicos\\APS.Cronicos.ViewModel\\APS.Cronicos.ViewModels.csproj",
+        "packagesPath": "C:\\Users\\015102749\\.nuget\\packages\\",
+        "outputPath": "C:\\NovosProjetos\\APS.Cronicos\\APS.Cronicos.ViewModel\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\015102749\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
+          "dependencies": {
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

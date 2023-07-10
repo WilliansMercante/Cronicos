@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Esse arquivo é usado pelo processo de publicação/pacote do seu projeto Web. É possível personalizar o comportamento deste processo
+ao editar este arquivo MSBuild. Para saber mais sobre isso, visite https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_PublishTargetUrl>D:\SistemasProntos\APS.Farmacia.AcompanhamentoPaciente\04062021_18h36min</_PublishTargetUrl>
+    <History>True|2021-06-04T21:37:44.8335224Z;True|2021-06-02T13:37:46.1759027-03:00;True|2021-06-02T10:19:43.2486677-03:00;True|2021-05-31T15:39:28.2339076-03:00;True|2021-05-11T18:28:40.0346442-03:00;True|2021-05-11T16:18:33.1063728-03:00;</History>
+  </PropertyGroup>
+</Project>

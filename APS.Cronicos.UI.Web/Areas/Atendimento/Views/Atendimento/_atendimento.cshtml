@@ -1,0 +1,40 @@
+﻿@model APS.Cronicos.UI.Web.Areas.Atendimento.ViewModels.AtendimentoViewModel
+
+<div class="body">
+    <table id="tb-atendimento" class="table table-bordered table-hover table-responsive">
+        <thead>
+            <tr>
+                <th>Cns</th>
+                <th>Tipo de Atendimento</th>
+                <th>Sigla</th>
+                <th>Data de Referência</th>
+                <th style="width:10%">
+                    <button class="btn btn-xs btn-info incluir-atendimento" title="Incluir Atendimento" data-toggle="tooltip" data-html="true">
+                        <i class="ace-icon glyphicon glyphicon-plus alinhar"></i>
+                    </button>
+                </th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+</div>
+
+<script type="text/x-jquery-tmpl" id="tmpl-atendimentos">
+
+    <tr data-id="${id}">
+        <td>${cnsPaciente}</td>
+        <td>${tipoAtendimento.tipoAtendimento}</td>
+        <td>${tipoAtendimento.sigla}</td>
+        <td>${moment(dtReferencia).format('DD/MM/YYYY')}</td>
+        <td>
+            <button class="btn btn-xs btn-warning editar-atendimento" title="Editar Atendimento" type="button">
+                <i class="ace-icon fa fa-pencil bigger-120 alinhar"></i>
+            </button>
+
+            <button class="btn btn-xs btn-danger excluir-atendimento" title="Excluir Atendimento" type="button">
+               <i class="ace-icon fa fa-trash-o bigger-120 alinhar"></i>
+            </button>
+        </td>
+    </tr>
+
+</script>

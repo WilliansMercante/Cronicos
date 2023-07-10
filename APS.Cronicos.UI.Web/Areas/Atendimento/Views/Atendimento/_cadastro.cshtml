@@ -1,0 +1,45 @@
+﻿@model APS.Cronicos.UI.Web.Areas.Atendimento.ViewModels.CadastroViewModel
+
+<div class="row clearfix" style="padding:10px">
+    <div class="col-lg-12">
+        <div class="card">
+            <div class="body">
+                @using (Html.BeginForm("Cadastro", "Atendimento", new { area = "Atendimento" }, FormMethod.Post, true, new { id = "frm-Atendimento", @class = "form-horizontal" }))
+                {
+                    @Html.HiddenFor(p => p.Atendimento.Id)
+                    @Html.HiddenFor(p => p.Atendimento.CnsPaciente)
+
+                    <div class="row clearfix">
+                        <div class="col-lg-12">
+                            <div class="float-right">
+                                <span class="text-danger pull-left">(*) Campos obrigatórios</span>
+                            </div>
+                        </div>
+                    </div>
+                    <br />
+                    <div class="row clearfix">
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label class="control-label font-bold">
+                                    Data de Atendimento:
+                                </label> <span class="text-danger">*</span>
+                                @Html.TextBoxFor(p => p.Atendimento.DtReferencia, "{0:yyyy-MM-dd}", new { @class = "form-control",@type = "date", @required = "required", max = DateTime.Now.ToString("yyyy-MM-dd")})
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <label class="control-label">Tipo de Atendimento</label>
+                            <span class="text-danger">*</span>
+                            @Html.DropDownListFor(p => p.Atendimento.IdTipoAtendimento, Model.TiposAtendimento, "----- Selecione -----", new { @class = "form-control", @required="required" })
+                        </div>
+                        <div class="col-md-2">
+                            <button class="btn btn-sm btn-primary" id="btnIncluir">
+                                Incluir
+                                <i class="ace-icon fa fa-arrow-right icon-on-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>

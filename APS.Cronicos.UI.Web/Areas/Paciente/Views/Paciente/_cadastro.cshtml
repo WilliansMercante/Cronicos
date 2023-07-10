@@ -1,0 +1,184 @@
+﻿@model APS.Cronicos.UI.Web.Areas.Paciente.ViewModels.Paciente.DadosPacienteViewModel
+
+<div id="tabPaciente" class="tab-pane in active">
+    @using (Html.BeginForm("Cadastro", "Paciente", new { area = "Paciente" }, FormMethod.Post, true, new { @class = "form-horizontal", id = "frm-paciente" }))
+    {
+        @Html.HiddenFor(p => p.Paciente.Id)
+        @Html.HiddenFor(p => p.PacienteUnidade.Id)
+        @Html.HiddenFor(p => p.PacienteUnidade.IdUnidade)
+        @Html.HiddenFor(p => p.PacienteUnidade.NomeEnfermeiro)
+        @Html.HiddenFor(p => p.PacienteUnidade.NomeMedico)
+        @Html.HiddenFor(p => p.PacienteUnidade.NomeEquipe)
+
+        <fieldset class="scheduler-border">
+            <legend class="scheduler-border">Paciente</legend>
+            <div class="row clearfix">
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                    <div class="col-sm-4">
+                        <label>CNS:</label><span class="text-danger">*</span>
+                        @Html.TextBoxFor(p => p.Paciente.Cns, new { @class = "form-control", required = "required", maxlength = "15" })
+                    </div>
+                    <div class="col-sm-6" id="divPequisar">
+                        <a class="btn btn-sm btn-success" id="btnPesquisar"><i class="ace-icon fa fa-search"></i></a>
+                    </div>                    
+                </div>
+            </div>
+            <div id="divDadosPaciente">
+                @Html.HiddenFor(p => p.Paciente.Id)
+                <div class="row clearfix">
+                    <div class="col-sm-12 col-md-12 col-lg-12" style="margin-top: 8px;">
+                        <div class="col-sm-9">
+                            <label>Nome:</label><span class="text-danger">*</span>
+                            @Html.TextBoxFor(p => p.Paciente.Nome, new { @class = "form-control", required = "required", autocapitalize="word" })
+                        </div>
+                        <div class="col-sm-3">
+                            <label>CPF:</label>
+                            @Html.TextBoxFor(p => p.Paciente.Cpf, new { @class = "form-control cpf" })
+                        </div>
+                    </div>
+                </div>
+                <div class="row clearfix">
+                    <div class="col-sm-12 col-md-12 col-lg-12" style="margin-top: 8px;">
+                        <div class="col-sm-4">
+                            <label>RG:</label>
+                            @Html.TextBoxFor(p => p.Paciente.Rg, new { @class = "form-control" })
+                        </div>
+                        <div class="col-sm-3">
+                            <label>Sexo:<span class="text-danger">*</span></label>
+                            @Html.DropDownListFor(p => p.Paciente.IdSexo, Model.ListarSexo, "--Selecione--", new { @class = "form-control",required = "required" })
+                        </div>
+                        <div class="col-sm-5">
+                            <label>E-mail:</label>
+                            @Html.TextBoxFor(p => p.Paciente.Email, new { @class = "form-control" })
+                        </div>
+                    </div>
+                </div>
+                <div class="row clearfix">
+                    <div class="col-sm-12 col-md-12 col-lg-12" style="margin-top: 8px;">
+                        <div class="col-sm-3">
+                            <label>Dt. Nascimento: <span class="text-danger">*</span></label>
+                            @Html.TextBoxFor(p => p.Paciente.DtNascimento, new { @class = "form-control data", required = "required" })
+                        </div>
+                        <div class="col-sm-3">
+                            <label>Celular:</label>
+                            @Html.TextBoxFor(p => p.Paciente.NrCelular, new { @class = "form-control telefone" })
+                        </div>
+                        <div class="col-sm-3">
+                            <label>Tel. Residencial:</label>
+                            @Html.TextBoxFor(p => p.Paciente.NrTelResidencial, new { @class = "form-control telefone" })
+                        </div>
+                        <div class="col-sm-3">
+                            <label>Tel. Contato:</label>
+                            @Html.TextBoxFor(p => p.Paciente.NrTelContato, new { @class = "form-control telefone" })
+                        </div>
+                    </div>
+                </div>
+                <div class="row clearfix">
+                    <div class="col-sm-12 col-md-12 col-lg-12" style="margin-top: 8px;">
+                        <div class="col-sm-6">
+                            <label>Pai:</label>
+                            @Html.TextBoxFor(p => p.Paciente.NmPai, new { @class = "form-control" })
+                        </div>
+                        <div class="col-sm-6">
+                            <label>Mãe:</label>
+                            @Html.TextBoxFor(p => p.Paciente.NmMae, new { @class = "form-control" })
+                        </div>
+                    </div>
+                </div>
+                <div class="row clearfix">
+                    <div class="col-sm-12 col-md-12 col-lg-12" style="margin-top: 8px;">
+                        <div class="col-sm-3">
+                            <label>CEP:<span class="text-danger">*</span></label>
+                            @Html.TextBoxFor(p => p.Paciente.Cep, new { @class = "form-control cep", required = "required" })
+                        </div>
+                        <div class="col-sm-6">
+                            <label>Logradouro:<span class="text-danger">*</span></label>
+                            @Html.TextBoxFor(p => p.Paciente.Logradouro, new { @class = "form-control", @readonly = "readonly", required = "required" })
+                        </div>
+                        <div class="col-sm-3">
+                            <label>Número:<span class="text-danger">*</span></label>
+                            @Html.TextBoxFor(p => p.Paciente.NrLogradouro, new { @class = "form-control", required = "required" })
+                        </div>
+                    </div>
+                </div>
+                <div class="row clearfix">
+                    <div class="col-sm-12 col-md-12 col-lg-12" style="margin-top: 8px; ">
+                        <div class="col-sm-3">
+                            <label>Bairro:<span class="text-danger">*</span></label>
+                            @Html.TextBoxFor(p => p.Paciente.Bairro, new { @class = "form-control", required = "required", @readonly = "readonly" })
+                        </div>
+                        <div class="col-sm-2">
+                            <label>Complemento:</label>
+                            @Html.TextBoxFor(p => p.Paciente.Complemento, new { @class = "form-control" })
+                        </div>
+                        <div class="col-sm-2">
+                            <label>Municipio:<span class="text-danger">*</span></label>
+                            @Html.TextBoxFor(p => p.Paciente.Municipio, new { @class = "form-control", required = "required", @readonly = "readonly" })
+                        </div>
+                        <div class="col-sm-2">
+                            <label>UF:<span class="text-danger">*</span></label>
+                            @Html.TextBoxFor(p => p.Paciente.UF, new { @class = "form-control", required = "required", @readonly = "readonly" })
+                        </div>
+                        <div class="col-sm-1">
+                            <label>Óbito?</label>
+                            @Html.CheckBoxFor(p => p.Paciente.FlObito, new { @class = "form-control check"})
+                        </div>
+                        <div class="col-sm-2" style="display:none" id="divDtObito">
+                            <label>Data Provavél do Óbito:<span class="text-danger">*</span></label>
+                            @Html.TextBoxFor(p => p.Paciente.DtProvavelObito,"{0:yyyy-MM-dd}", new {  @class = "form-control data"})
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+        <div id="divDadosUnidade">
+            <fieldset class="scheduler-border">
+                <legend class="scheduler-border">Dados da Unidade</legend>
+                <div class="row clearfix">
+                    <div class="col-sm-12 col-md-12 col-lg-12" style="margin-top: 8px; ">
+                        <div class="col-sm-1">
+                            <label>Fora de Área?</label>
+                            @Html.CheckBoxFor(p => p.PacienteUnidade.FlForaDeArea, new { @class = "form-control check"})
+                        </div>
+                        <div id="divEquipe">
+                            <div class="col-sm-2">
+                                <label>Prontuario:<span class="text-danger">*</span></label>
+                                @Html.TextBoxFor(p => p.PacienteUnidade.Prontuario, new { @class = "form-control", required = "required" })
+                            </div>
+                            <div class="col-sm-3">
+                                <label>Equipe:</label>
+                                @Html.DropDownListFor(p => p.PacienteUnidade.IdEquipe, Model.Equipes, "--Selecione--", new { @class = "form-control" })
+                            </div>
+                            <div class="col-sm-3">
+                                <label>Enfermeiro:</label>
+                                @Html.DropDownListFor(p => p.PacienteUnidade.CpfEnfermeiro, Model.Enfermeiros, "--Selecione--", new { @class = "form-control" })
+                            </div>
+                            <div class="col-sm-3">
+                                <label>Medico:</label>
+                                @Html.DropDownListFor(p => p.PacienteUnidade.CpfMedico, Model.Medicos, "--Selecione--", new { @class = "form-control" })
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+        <div id="divDiagnostico">
+            <fieldset class="scheduler-border">
+                <legend class="scheduler-border">Diagnóstico</legend>
+                <div class="row clearfix">
+                    <div class="col-sm-12 col-md-12 col-lg-12" style="margin-top: 8px; ">
+                        <div class="col-sm-3">
+                            <label>Equipe:</label>
+                            @Html.DropDownListFor(p => p.PacienteUnidade.IdDiagnostico, Model.Diagnosticos, "--Selecione--", new { @class = "form-control", required = "required" })
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+        <div class="divBotoesEdicao">
+            <input class="btn btn-danger" type="button" value="Cancelar" id="btnCancelar">
+            <input class="btn btn-success" type="submit" value="Gravar" id="btnSalvar">
+        </div>
+        <input class="btn btn-warning" type="button" value="Editar" id="btnEditar" />
+    }
+</div>

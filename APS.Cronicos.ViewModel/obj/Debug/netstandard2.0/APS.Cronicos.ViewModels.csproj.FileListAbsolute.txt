@@ -1,0 +1,10 @@
+C:\NovosProjetos\APS.Cronicos\APS.Cronicos.ViewModel\bin\Debug\netstandard2.0\APS.Cronicos.ViewModels.deps.json
+C:\NovosProjetos\APS.Cronicos\APS.Cronicos.ViewModel\bin\Debug\netstandard2.0\APS.Cronicos.ViewModels.dll
+C:\NovosProjetos\APS.Cronicos\APS.Cronicos.ViewModel\bin\Debug\netstandard2.0\APS.Cronicos.ViewModels.pdb
+C:\NovosProjetos\APS.Cronicos\APS.Cronicos.ViewModel\obj\Debug\netstandard2.0\APS.Cronicos.ViewModels.csproj.AssemblyReference.cache
+C:\NovosProjetos\APS.Cronicos\APS.Cronicos.ViewModel\obj\Debug\netstandard2.0\APS.Cronicos.ViewModels.GeneratedMSBuildEditorConfig.editorconfig
+C:\NovosProjetos\APS.Cronicos\APS.Cronicos.ViewModel\obj\Debug\netstandard2.0\APS.Cronicos.ViewModels.AssemblyInfoInputs.cache
+C:\NovosProjetos\APS.Cronicos\APS.Cronicos.ViewModel\obj\Debug\netstandard2.0\APS.Cronicos.ViewModels.AssemblyInfo.cs
+C:\NovosProjetos\APS.Cronicos\APS.Cronicos.ViewModel\obj\Debug\netstandard2.0\APS.Cronicos.ViewModels.csproj.CoreCompileInputs.cache
+C:\NovosProjetos\APS.Cronicos\APS.Cronicos.ViewModel\obj\Debug\netstandard2.0\APS.Cronicos.ViewModels.dll
+C:\NovosProjetos\APS.Cronicos\APS.Cronicos.ViewModel\obj\Debug\netstandard2.0\APS.Cronicos.ViewModels.pdb

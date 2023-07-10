@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "KUcKw/cUlo0raSaD3wnsWa4pDyn+RW909ktoXsyCA2jn+OJ6VzvK4GpfIQhr9Tu2S5cHTIJr/Ckh1frFGEC5VA==",
+  "success": true,
+  "projectFilePath": "C:\\NovosProjetos\\APS.Cronicos\\APS.Cronicos.ViewModel\\APS.Cronicos.ViewModels.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\015102749\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\015102749\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

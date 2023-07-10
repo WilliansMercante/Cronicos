@@ -1,0 +1,66 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\NovosProjetos\\APS.Cronicos\\APS.Cronicos.ViewModel\\APS.Cronicos.ViewModels.csproj": {}
+  },
+  "projects": {
+    "C:\\NovosProjetos\\APS.Cronicos\\APS.Cronicos.ViewModel\\APS.Cronicos.ViewModels.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\NovosProjetos\\APS.Cronicos\\APS.Cronicos.ViewModel\\APS.Cronicos.ViewModels.csproj",
+        "projectName": "APS.Cronicos.ViewModels",
+        "projectPath": "C:\\NovosProjetos\\APS.Cronicos\\APS.Cronicos.ViewModel\\APS.Cronicos.ViewModels.csproj",
+        "packagesPath": "C:\\Users\\015102749\\.nuget\\packages\\",
+        "outputPath": "C:\\NovosProjetos\\APS.Cronicos\\APS.Cronicos.ViewModel\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\015102749\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
+          "dependencies": {
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

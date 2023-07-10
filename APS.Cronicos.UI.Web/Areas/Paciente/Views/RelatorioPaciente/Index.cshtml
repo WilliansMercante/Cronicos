@@ -1,0 +1,108 @@
+﻿@model APS.Cronicos.UI.Web.Areas.Paciente.ViewModels.RelatorioPaciente.IndexViewModel
+
+@{
+    Layout = "~/Views/Shared/_Template.cshtml";
+    ViewData["Title"] = "Relatório de Pacientes";
+}
+
+@section CSS
+    {
+    <link type="text/css" rel="stylesheet" href="~/assets/plugins/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css" />
+    <link type="text/css" rel="stylesheet" href="~/assets/css/select2.min.css" />
+    <link type="text/css" rel="stylesheet" href="~/assets/css/custom/paciente/relatorioPaciente/index.css" />
+}
+
+    @Html.HiddenFor(p => p.Paciente.Id)
+    @Html.HiddenFor(p => p.PacienteUnidade.Id)
+    @Html.HiddenFor(p => p.PacienteUnidade.IdUnidade)
+
+    <section class="content">
+        <div class="block-header">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <ul class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="/Home/Index"><i class="zmdi zmdi-home"></i> Home</a></li>
+                    <li class="breadcrumb-item"> Relatórios</li>
+                    <li class="breadcrumb-item"> Relatório de Pacientes</li>
+                </ul>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="card">
+                            <div class="header">
+                                <h2>
+                                    <strong>Relatório de Pacientes</strong>
+                                    <label class="botaoVoltar">
+                                        <a class="btn btn-sm btn-primary btn-icon voltar btn-round" href="/Home/Index" title="Voltar">
+                                            <i class="glyphicon glyphicon-circle-arrow-left"></i>
+                                        </a>
+                                    </label>
+                                </h2>
+                            </div>
+                            <div class="body">
+                                <div>
+                                    <div id="divDadosUnidade">
+                                        <fieldset class="scheduler-border">
+                                            <legend class="scheduler-border">Dados da Unidade</legend>
+                                            <div class="row clearfix">
+                                                <div class="col-sm-12 col-md-12 col-lg-12" style="margin-top: 8px; ">
+                                                    <div class="col-sm-1">
+                                                        <label>Fora de Área?</label>
+                                                        @Html.CheckBoxFor(p => p.PacienteUnidade.FlForaDeArea)
+                                                    </div>
+                                                    <div id="divEquipe">
+                                                        <div class="col-sm-2">
+                                                            <label>Prontuario:</label>
+                                                            @Html.TextBoxFor(p => p.PacienteUnidade.Prontuario, new { @class = "form-control" })
+                                                        </div>
+                                                        <div class="col-sm-3">
+                                                            <label>Equipe:</label>
+                                                            @Html.DropDownListFor(p => p.PacienteUnidade.IdEquipe, Model.Equipes, "--Selecione--", new { @class = "form-control" })
+                                                        </div>
+                                                        <div class="col-sm-3">
+                                                            <label>Enfermeiro:</label>
+                                                            @Html.DropDownListFor(p => p.PacienteUnidade.CpfEnfermeiro, Model.Enfermeiros, "--Selecione--", new { @class = "form-control" })
+                                                        </div>
+                                                        <div class="col-sm-3">
+                                                            <label>Medico:</label>
+                                                            @Html.DropDownListFor(p => p.PacienteUnidade.CpfMedico, Model.Medicos, "--Selecione--", new { @class = "form-control" })
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </fieldset>
+                                    </div>
+                                    <div id="divDiagnostico">
+                                        <fieldset class="scheduler-border">
+                                            <legend class="scheduler-border">Diagnóstico</legend>
+                                            <div class="row clearfix">
+                                                <div class="col-sm-12 col-md-12 col-lg-12" style="margin-top: 8px; ">
+                                                    <div class="col-sm-3">
+                                                        <label>Diagnóstico:</label>
+                                                        @Html.DropDownListFor(p => p.PacienteUnidade.IdDiagnostico, Model.Diagnosticos, "--Selecione--", new { @class = "form-control" })
+                                                    </div>
+                                                </div>
+                                            </div>                                            
+                                        </fieldset>
+                                        <input type="button" id="gerarRelatorioPacientes" class="btn btn-success" value="Gerar PDF">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    @section JS
+    {
+    <script src="~/assets/js/moment.min.js"></script>
+    <script src="~/assets/js/jquery.maskedinput.min.js"></script>
+    <script src="~/assets/js/select2.min.js"></script>
+    <script src="~/assets/js/utils/validacao/validacaoCns.js"></script>
+    <script src="~/assets/js/utils/formatacao/formatacaoCPF.js"></script>
+    <script src="~/assets/js/custom/Paciente/RelatorioPaciente/index.js"></script>
+}

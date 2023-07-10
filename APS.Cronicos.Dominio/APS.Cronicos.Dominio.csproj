@@ -1,0 +1,46 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Email\Repositories\**" />
+    <Compile Remove="Email\Services\**" />
+    <Compile Remove="Log\Repositories\**" />
+    <Compile Remove="Log\Services\**" />
+    <Compile Remove="Mensagem\Services\**" />
+    <Compile Remove="Menu\Service\**" />
+    <Compile Remove="Parametrizacao\Services\**" />
+    <Compile Remove="Seguranca\Services\**" />
+    <EmbeddedResource Remove="Email\Repositories\**" />
+    <EmbeddedResource Remove="Email\Services\**" />
+    <EmbeddedResource Remove="Log\Repositories\**" />
+    <EmbeddedResource Remove="Log\Services\**" />
+    <EmbeddedResource Remove="Mensagem\Services\**" />
+    <EmbeddedResource Remove="Menu\Service\**" />
+    <EmbeddedResource Remove="Parametrizacao\Services\**" />
+    <EmbeddedResource Remove="Seguranca\Services\**" />
+    <None Remove="Email\Repositories\**" />
+    <None Remove="Email\Services\**" />
+    <None Remove="Log\Repositories\**" />
+    <None Remove="Log\Services\**" />
+    <None Remove="Mensagem\Services\**" />
+    <None Remove="Menu\Service\**" />
+    <None Remove="Parametrizacao\Services\**" />
+    <None Remove="Seguranca\Services\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="5.0.0" />
+  </ItemGroup>
+
+</Project>

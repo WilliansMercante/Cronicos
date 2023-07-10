@@ -1,0 +1,85 @@
+﻿#btnPesquisar, #btnUnidadeReferencia {
+    margin-top: 25px;
+}
+
+#btnRecarregar {
+    width: 164px;
+}
+
+#iBtnRecarregar {
+    margin-left: -29px;
+}
+
+#divRecarregar {
+    margin-top: 9px;
+    margin-left: -12px;
+}
+
+fieldset.scheduler-border {
+    border: 1px groove #ddd !important;
+    padding: 0 1.4em 1.4em 1.4em !important;
+    margin: 0 0 1.5em 0 !important;
+    -webkit-box-shadow: 0px 0px 0px 0px #000;
+    box-shadow: 0px 0px 0px 0px #000;
+}
+
+.check {
+    width: 20px;
+    height: 20px;
+}
+
+#divGerarImc {
+    margin-top: 29px;
+}
+
+#divConteudo {
+    margin-top: 42px;
+}
+
+legend.scheduler-border {
+    font-size: 1.2em !important;
+    font-weight: bold !important;
+    text-align: left !important;
+    width: auto;
+    padding: 5px;
+    border: none;
+}
+
+#divDadosPaciente, #divDadosUnidade, #divDiagnostico {
+    display: none;
+}
+
+#btnSalvar, #btnEditar, #btnCancelar {
+    display: none;
+}
+
+#btnSalvar, #btnEditar, #btnCancelar {
+    border-radius: 2px;
+    width: 130px;
+}
+
+#btnIncluir {
+    margin-top: 28px;
+}
+
+.divBotoesEdicao, #btnEditar {
+    position: fixed;
+    right: 12px;
+    z-index: 100;
+    margin-top: 10px;
+    float: right;
+    bottom: 6%;
+    margin-right: 3%;
+}
+
+.alinhar {
+    margin-left: 3px;
+}
+
+.botaoVoltar {
+    float: right;
+}
+
+.select2 {
+    width: 100% !important;
+}

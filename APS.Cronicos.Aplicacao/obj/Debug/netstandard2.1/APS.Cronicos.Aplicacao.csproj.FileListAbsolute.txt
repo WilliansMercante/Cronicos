@@ -1,0 +1,17 @@
+C:\NovosProjetos\APS.Cronicos\APS.Cronicos.Aplicacao\bin\Debug\netstandard2.1\APS.Cronicos.Aplicacao.deps.json
+C:\NovosProjetos\APS.Cronicos\APS.Cronicos.Aplicacao\bin\Debug\netstandard2.1\APS.Cronicos.Aplicacao.dll
+C:\NovosProjetos\APS.Cronicos\APS.Cronicos.Aplicacao\bin\Debug\netstandard2.1\APS.Cronicos.Aplicacao.pdb
+C:\NovosProjetos\APS.Cronicos\APS.Cronicos.Aplicacao\bin\Debug\netstandard2.1\APS.Cronicos.Dominio.dll
+C:\NovosProjetos\APS.Cronicos\APS.Cronicos.Aplicacao\bin\Debug\netstandard2.1\APS.Cronicos.Infra.Data.dll
+C:\NovosProjetos\APS.Cronicos\APS.Cronicos.Aplicacao\bin\Debug\netstandard2.1\APS.Cronicos.ViewModels.dll
+C:\NovosProjetos\APS.Cronicos\APS.Cronicos.Aplicacao\bin\Debug\netstandard2.1\APS.Cronicos.Dominio.pdb
+C:\NovosProjetos\APS.Cronicos\APS.Cronicos.Aplicacao\bin\Debug\netstandard2.1\APS.Cronicos.Infra.Data.pdb
+C:\NovosProjetos\APS.Cronicos\APS.Cronicos.Aplicacao\bin\Debug\netstandard2.1\APS.Cronicos.ViewModels.pdb
+C:\NovosProjetos\APS.Cronicos\APS.Cronicos.Aplicacao\obj\Debug\netstandard2.1\APS.Cronicos.Aplicacao.csproj.AssemblyReference.cache
+C:\NovosProjetos\APS.Cronicos\APS.Cronicos.Aplicacao\obj\Debug\netstandard2.1\APS.Cronicos.Aplicacao.GeneratedMSBuildEditorConfig.editorconfig
+C:\NovosProjetos\APS.Cronicos\APS.Cronicos.Aplicacao\obj\Debug\netstandard2.1\APS.Cronicos.Aplicacao.AssemblyInfoInputs.cache
+C:\NovosProjetos\APS.Cronicos\APS.Cronicos.Aplicacao\obj\Debug\netstandard2.1\APS.Cronicos.Aplicacao.AssemblyInfo.cs
+C:\NovosProjetos\APS.Cronicos\APS.Cronicos.Aplicacao\obj\Debug\netstandard2.1\APS.Cronicos.Aplicacao.csproj.CoreCompileInputs.cache
+C:\NovosProjetos\APS.Cronicos\APS.Cronicos.Aplicacao\obj\Debug\netstandard2.1\APS.Cronicos.Aplicacao.csproj.CopyComplete
+C:\NovosProjetos\APS.Cronicos\APS.Cronicos.Aplicacao\obj\Debug\netstandard2.1\APS.Cronicos.Aplicacao.dll
+C:\NovosProjetos\APS.Cronicos\APS.Cronicos.Aplicacao\obj\Debug\netstandard2.1\APS.Cronicos.Aplicacao.pdb

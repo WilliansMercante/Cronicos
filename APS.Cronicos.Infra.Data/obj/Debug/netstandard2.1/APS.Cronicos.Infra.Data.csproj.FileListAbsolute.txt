@@ -1,0 +1,13 @@
+C:\NovosProjetos\APS.Cronicos\APS.Cronicos.Infra.Data\bin\Debug\netstandard2.1\APS.Cronicos.Infra.Data.deps.json
+C:\NovosProjetos\APS.Cronicos\APS.Cronicos.Infra.Data\bin\Debug\netstandard2.1\APS.Cronicos.Infra.Data.dll
+C:\NovosProjetos\APS.Cronicos\APS.Cronicos.Infra.Data\bin\Debug\netstandard2.1\APS.Cronicos.Infra.Data.pdb
+C:\NovosProjetos\APS.Cronicos\APS.Cronicos.Infra.Data\bin\Debug\netstandard2.1\APS.Cronicos.Dominio.dll
+C:\NovosProjetos\APS.Cronicos\APS.Cronicos.Infra.Data\bin\Debug\netstandard2.1\APS.Cronicos.Dominio.pdb
+C:\NovosProjetos\APS.Cronicos\APS.Cronicos.Infra.Data\obj\Debug\netstandard2.1\APS.Cronicos.Infra.Data.csproj.AssemblyReference.cache
+C:\NovosProjetos\APS.Cronicos\APS.Cronicos.Infra.Data\obj\Debug\netstandard2.1\APS.Cronicos.Infra.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\NovosProjetos\APS.Cronicos\APS.Cronicos.Infra.Data\obj\Debug\netstandard2.1\APS.Cronicos.Infra.Data.AssemblyInfoInputs.cache
+C:\NovosProjetos\APS.Cronicos\APS.Cronicos.Infra.Data\obj\Debug\netstandard2.1\APS.Cronicos.Infra.Data.AssemblyInfo.cs
+C:\NovosProjetos\APS.Cronicos\APS.Cronicos.Infra.Data\obj\Debug\netstandard2.1\APS.Cronicos.Infra.Data.csproj.CoreCompileInputs.cache
+C:\NovosProjetos\APS.Cronicos\APS.Cronicos.Infra.Data\obj\Debug\netstandard2.1\APS.Cronicos.Infra.Data.csproj.CopyComplete
+C:\NovosProjetos\APS.Cronicos\APS.Cronicos.Infra.Data\obj\Debug\netstandard2.1\APS.Cronicos.Infra.Data.dll
+C:\NovosProjetos\APS.Cronicos\APS.Cronicos.Infra.Data\obj\Debug\netstandard2.1\APS.Cronicos.Infra.Data.pdb

@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Modelo_Estrutura_Escopo\**" />
+    <EmbeddedResource Remove="Modelo_Estrutura_Escopo\**" />
+    <None Remove="Modelo_Estrutura_Escopo\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="10.1.1" />
+    <PackageReference Include="MediatR" Version="9.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\APS.Cronicos.Dominio\APS.Cronicos.Dominio.csproj" />
+    <ProjectReference Include="..\APS.Cronicos.Infra.Data\APS.Cronicos.Infra.Data.csproj" />
+    <ProjectReference Include="..\APS.Cronicos.ViewModel\APS.Cronicos.ViewModels.csproj" />
+  </ItemGroup>
+
+</Project>

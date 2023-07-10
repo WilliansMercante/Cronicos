@@ -1,0 +1,185 @@
+﻿@model APS.Cronicos.ViewModels.Cronicos.Paciente.RptPacienteViewModel
+
+@using Microsoft.AspNetCore.Hosting
+@inject IWebHostEnvironment WebHostEnvironment
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Relatório de Pacientes</title>
+    <link href="@System.IO.Path.Combine(WebHostEnvironment.ContentRootPath, "wwwroot/assets/css/bootstrap.min.css")" rel="stylesheet" type="text/css" />
+
+
+    <style type="text/css">
+        table {
+            font-size: 14px;
+            width: 95%;
+        }
+
+            table tr td {
+                width: auto;
+                padding: 5px;
+            }
+
+        .texto {
+            margin: 1px;
+            text-align: justify;
+        }
+
+        .subtitle {
+            background-color: #F0F2FF;
+            padding: 5px;
+            border-bottom: 1px solid #cccccc;
+        }
+
+        .table_border_bottom {
+            border-bottom: 1px dotted #dddddd;
+        }
+
+        .logo {
+            width: 200px;
+        }
+
+        .font-bold {
+            font-weight: bold;
+        }
+
+        .observacao {
+            font-style: italic;
+        }
+
+        @@media print {
+            body {
+                page-break-after: always;
+            }
+        }
+
+        .title {
+            background-color: cornflowerblue;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            font-size: 16px;
+            text-transform: uppercase;
+        }
+
+        .destaque {
+            background-color: #faf8df;
+        }
+
+        .cabecalho,
+        .rodape {
+            background-color: lavender !important;
+            text-align: center;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .rotulo {
+            font-weight: bold;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        hr {
+            border: 1px dotted #dddddd;
+        }
+
+        h3 {
+            font-size: 16px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        h4, h5 {
+            font-size: 14px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .logomarca {
+            width: 15% !important;
+        }
+
+        .align-middle {
+            vertical-align: middle !important;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="row clearfix">
+        <div class="col-lg-12">
+            <div class="card">
+                <div class="body">
+                    <div class="col-sm-12">
+                        <table>
+                            <tr>
+                                <td class="logomarca"><img src="@System.IO.Path.Combine(WebHostEnvironment.ContentRootPath, "wwwroot/assets/images/logo_aps_santa_marcelina.png")" class="logo" /></td>
+                                <td class="text-center align-middle"><h3>Relatório de Pacientes</h3></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="divRelatorio">
+        <div class="body">
+            <table id="tb-Pacientes" class="table table-bordered table-hover table-responsive">
+                <thead>
+                    <tr>
+                        <th colspan="1">
+                            <h4>CNES: @Model.IdUnidade </h4>
+                        </th>
+                        <th colspan="8">
+                            <h4>Unidade: @Model.NomeUnidade</h4>
+                        </th>
+                    </tr>
+                </thead>
+                <thead>
+                    <tr>
+                        <th>Cns</th>
+                        <th>Nome</th>
+                        <th>Fora de Área</th>
+                        <th>Prontuário</th>
+                        <th>Equipe</th>
+                        <th>Enfermeiro</th>
+                        <th>Médico</th>
+                        <th>Diagnóstico</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model.DadosPaciente)
+                    {
+                        <tr>
+                            <td>@item.Paciente.Cns</td>
+                            <td>@item.Paciente.Nome</td>
+                            @if (@item.PacienteUnidade.FlForaDeArea)
+                            {
+                                <td>Sim</td>
+                                <td></td>
+                                <td></td>                                
+                                <td></td>
+                                <td></td>
+                            }
+                            else
+                            {
+                                <td>Não</td>
+                                <td>@item.PacienteUnidade.Prontuario</td>
+                                <td>@item.PacienteUnidade.NomeEquipe</td>
+                                <td>@item.PacienteUnidade.NomeEnfermeiro</td>
+                                <td>@item.PacienteUnidade.NomeMedico</td>
+                            }
+                            <td>@item.Diagnostico.Diagnostico</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

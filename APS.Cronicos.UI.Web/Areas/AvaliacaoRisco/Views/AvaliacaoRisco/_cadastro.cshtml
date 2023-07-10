@@ -1,0 +1,131 @@
+﻿@model APS.Cronicos.UI.Web.Areas.AvaliacaoRisco.ViewModels.CadastroViewModel
+
+<div class="row clearfix" style="padding:10px">
+    <div class="col-lg-12">
+        <div class="card">
+            <div class="body">
+                @using (Html.BeginForm("Cadastro", "AvaliacaoRisco", new { area = "AvaliacaoRisco" }, FormMethod.Post, true, new { id = "frm-Avaliacao", @class = "form-horizontal" }))
+                {
+                    @Html.HiddenFor(p => p.AvaliacaoRisco.Id)
+                    @Html.HiddenFor(p => p.AvaliacaoRisco.CnsPaciente)
+                    @Html.HiddenFor(p => p.flDiabetes)
+
+                    <div class="row clearfix">
+                        <div class="col-lg-12">
+                            <div class="float-right">
+                                <span class="text-danger pull-left">(*) Campos obrigatórios</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <fieldset class="scheduler-border">
+                        <legend class="scheduler-border">Estratificação</legend>
+                        <div class="row clearfix">
+                            <div class="col-md-3">
+                                <label class="control-label font-bold">
+                                    Data de Estratificação:
+                                </label> <span class="text-danger">*</span>
+                                @Html.TextBoxFor(p => p.AvaliacaoRisco.DtEstratificacao, "{0:yyyy-MM-dd}", new { @class = "form-control",@type = "date", @required = "required", max = DateTime.Now.ToString("yyyy-MM-dd")})
+                            </div>
+                            <div class="col-md-5">
+                                <label class="control-label">Estratificação de Risco</label>
+                                <span class="text-danger">*</span>
+                                @Html.DropDownListFor(p => p.AvaliacaoRisco.IdEstratificacaoRisco, Model.EstratificacoesRisco, "----- Selecione -----", new { @class = "form-control", @required="required" })
+                            </div>
+                        </div>
+                    </fieldset>
+                    <div id="divImc">
+                        <fieldset class="scheduler-border">
+                            <legend class="scheduler-border">IMC</legend>
+                            <div class="col-md-2">
+                                <label class="control-label font-bold">
+                                    Peso:
+                                </label> <span class="text-danger">*</span>
+                                @Html.TextBoxFor(p => p.AvaliacaoRisco.Peso, new { @class = "form-control", @required = "required", @maxlength ="3", @type = "number", @oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"})
+                            </div>
+                            <div class="col-md-2">
+                                <label class="control-label font-bold">
+                                    Altura:
+                                </label> <span class="text-danger">*</span>
+                                @Html.TextBoxFor(p => p.AvaliacaoRisco.Altura, new { @class = "form-control", @required = "required"})
+                            </div>
+                            <div class="col-md-1" id="divGerarImc">
+                                <a class="btn btn-sm btn-success" id="gerarImc"><i class="ace-icon fa fa-search"></i></a>
+                            </div>
+                            <div class="col-md-7">
+                                <div id="divResultadoIMC">
+                                    <h4 class="margin-0" id="mensagemImc"></h4>
+                                    <br />
+                                    <strong id="resultadoImc"></strong>
+                                    <br />
+                                    <br />
+                                    <span id="classificacaoImc"></span>
+                                    <br />
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+                    @if (Model.flDiabetes)
+                    {
+                        <fieldset class="scheduler-border">
+                            <legend class="scheduler-border">Diabetes</legend>
+                            <div class="row clearfix" id="divDiabetes">
+                                <div class="col-md-3">
+                                    <label class="control-label font-bold">
+                                        Insulino Dependente?
+                                    </label> <span class="text-danger">*</span>
+                                    @Html.CheckBoxFor(p => p.AvaliacaoRisco.FlInsulinoDependente)
+                                </div>
+                                <div class="col-md-5">
+                                    <label class="control-label">Tipo de Diabetes:</label>
+                                    <span class="text-danger">*</span>
+                                    @Html.DropDownListFor(p => p.AvaliacaoRisco.IdTipoDiabetes, Model.TiposDiabetes, "----- Selecione -----", new { @class = "form-control", @required="required" })
+                                </div>
+                                <div class="col-md-3">
+                                    <label class="control-label font-bold">
+                                        Data da Avaliação dos Pés:
+                                    </label> <span class="text-danger">*</span>
+                                    @Html.TextBoxFor(p => p.AvaliacaoRisco.DtAvaliacaoPes, "{0:yyyy-MM-dd}", new { @class = "form-control",@type = "date", @required = "required", max = DateTime.Now.ToString("yyyy-MM-dd")})
+                                </div>
+
+                            </div>
+                            <br />
+                            <div class="row clearfix" id="divAmg">
+                                <div class="col-md-3">
+                                    <label class="control-label font-bold">
+                                        AMG?
+                                    </label> <span class="text-danger">*</span>
+                                    @Html.CheckBoxFor(p => p.AvaliacaoRisco.FlAmg)
+                                </div>
+                                <div class="col-md-3" id="divLaudo" style="display:none">
+                                    <label class="control-label font-bold">
+                                        Data do Laudo:
+                                    </label> <span class="text-danger">*</span>
+                                    @Html.TextBoxFor(p => p.AvaliacaoRisco.DtUltimolaudo, "{0:yyyy-MM-dd}", new { @class = "form-control",@type = "date", max = DateTime.Now.ToString("yyyy-MM-dd")})
+                                </div>
+                            </div>
+                        </fieldset>
+
+                    }
+                    <div class="row clearfix">
+                        <div class="col-md-12">
+                            <label class="control-label font-bold">
+                                Observação:
+                            </label> <span class="text-danger">*</span>
+                            @Html.TextAreaFor(p => p.AvaliacaoRisco.Observacao, new { @class = "form-control"})
+                        </div>
+                    </div>
+
+                    <div class="row clearfix pull-right">
+                        <div class="col-md-2">
+                            <button class="btn btn-sm btn-primary" id="btnIncluir">
+                                Incluir
+                                <i class="ace-icon fa fa-arrow-right icon-on-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,10 @@
+C:\NovosProjetos\APS.Cronicos\APS.Cronicos.DTL\bin\Debug\netstandard2.1\APS.Cronicos.DTL.deps.json
+C:\NovosProjetos\APS.Cronicos\APS.Cronicos.DTL\bin\Debug\netstandard2.1\APS.Cronicos.DTL.dll
+C:\NovosProjetos\APS.Cronicos\APS.Cronicos.DTL\bin\Debug\netstandard2.1\APS.Cronicos.DTL.pdb
+C:\NovosProjetos\APS.Cronicos\APS.Cronicos.DTL\obj\Debug\netstandard2.1\APS.Cronicos.DTL.csproj.AssemblyReference.cache
+C:\NovosProjetos\APS.Cronicos\APS.Cronicos.DTL\obj\Debug\netstandard2.1\APS.Cronicos.DTL.GeneratedMSBuildEditorConfig.editorconfig
+C:\NovosProjetos\APS.Cronicos\APS.Cronicos.DTL\obj\Debug\netstandard2.1\APS.Cronicos.DTL.AssemblyInfoInputs.cache
+C:\NovosProjetos\APS.Cronicos\APS.Cronicos.DTL\obj\Debug\netstandard2.1\APS.Cronicos.DTL.AssemblyInfo.cs
+C:\NovosProjetos\APS.Cronicos\APS.Cronicos.DTL\obj\Debug\netstandard2.1\APS.Cronicos.DTL.csproj.CoreCompileInputs.cache
+C:\NovosProjetos\APS.Cronicos\APS.Cronicos.DTL\obj\Debug\netstandard2.1\APS.Cronicos.DTL.dll
+C:\NovosProjetos\APS.Cronicos\APS.Cronicos.DTL\obj\Debug\netstandard2.1\APS.Cronicos.DTL.pdb

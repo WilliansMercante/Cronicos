@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.2.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\APS.Cronicos.Aplicacao\APS.Cronicos.Aplicacao.csproj" />
+    <ProjectReference Include="..\APS.Cronicos.Dominio\APS.Cronicos.Dominio.csproj" />
+    <ProjectReference Include="..\APS.Cronicos.Infra.Data\APS.Cronicos.Infra.Data.csproj" />
+  </ItemGroup>
+
+</Project>

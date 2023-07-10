@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\APS.Cronicos.UI.Web.props" />
+</Project>

@@ -1,0 +1,64 @@
+﻿@model APS.Cronicos.UI.Web.Areas.AvaliacaoRisco.ViewModels.AvaliacaoRiscoViewModel
+
+<div class="body">
+    <table id="tb-avaliacao" class="table table-bordered table-hover table-responsive">
+        <thead>
+            <tr>
+                <th>Estratificação de Risco</th>
+                <th>Peso</th>
+                <th>Altura</th>
+                <th>Imc</th>
+                <th>Classificação</th>
+                <th>Data de Estratificação</th>
+                <th>Data de Avaliação dos Pés</th>
+                <th>Tipo de Diabetes</th>
+                <th>Insulino Dependente</th>
+                <th>AMG</th>
+                <th>Data do Laudo</th> 
+                <th>Observação</th>
+                <th style="width:10%">
+                    <button class="btn btn-xs btn-info incluir-avaliacao" title="Incluir Avaliação de Risco" data-toggle="tooltip" data-html="true">
+                        <i class="ace-icon glyphicon glyphicon-plus alinhar"></i>
+                    </button>
+                </th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+</div>
+
+<script type="text/x-jquery-tmpl" id="tmpl-avaliacoes">
+
+    <tr data-id="${id}">      
+        <td>${estratificacaoRisco.estratificacaoRisco}</td>
+        <td>${peso}</td>
+        <td>${altura}</td>
+        <td>${imc}</td>
+        <td class="${classe}">${classificacao}</td>
+        <td>${moment(dtEstratificacao).format('DD/MM/YYYY')}</td>
+        {{if dtAvaliacaoPes != null}}
+        <td>${moment(dtAvaliacaoPes).format('DD/MM/YYYY')}</td>
+        {{else}}
+        <td></td>           
+        {{/if}}
+        <td>${tipoDiabetes? tipoDiabetes.tipoDiabetes : ''}</td>
+        <td>${flInsulinoDependente ? 'Sim' : 'Não'}</td>
+        <td>${flAmg ? 'Sim' : 'Não'}</td>
+        {{if dtUltimolaudo != null}}
+        <td>${moment(dtUltimolaudo).format('DD/MM/YYYY')}</td>
+        {{else}}
+        <td></td>           
+        {{/if}}    
+        <td>${observacao}</td>
+        <td>
+            <button class="btn btn-xs btn-warning editar-avaliacao" title="Editar Avaliação" type="button">
+                <i class="ace-icon fa fa-pencil bigger-120 alinhar"></i>
+            </button>
+
+            <button class="btn btn-xs btn-danger excluir-avaliacao" title="Excluir Avaliação" type="button">
+               <i class="ace-icon fa fa-trash-o bigger-120 alinhar"></i>
+            </button>
+        </td>
+    </tr>
+
+</script>
